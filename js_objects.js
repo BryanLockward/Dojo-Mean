@@ -34,3 +34,8 @@ for(key in users)
     console.log(count+". "+users[key][i].last_name+", "+users[key][i].first_name+" - "+length);
   }
 }
+var array=[1,2,3];
+while(array.length > 0) {
+array.pop();
+}
+console.log(array);

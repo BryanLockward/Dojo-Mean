@@ -1,0 +1,20 @@
+1. Undefined because the declaration will be hoisted,
+but it still wont have a value.
+
+2.magnet because of the scope of the function.
+
+3. super cool because the function print is not called.
+
+4. i think it will  log both chicken and half-chicken.
+
+5. I think it will throw an error because only the declaration
+of the mean is hoisted, meaning that when mean() is called, it
+still is not defined.
+
+6.  It will first log undefined because the declaration not the
+value is hoisted. Then it will log both rock and r&b because of the
+scope of the function. Then it will log disco as the global scope.
+
+7. It will do the same thing as the last one, except the first log will be San Jose
+because it is given a value. Seattle and Burbank will be logged inside the function,
+then San Jose again.
