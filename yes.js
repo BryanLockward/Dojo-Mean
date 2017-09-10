@@ -1,9 +1,27 @@
-console.log("NOW: ");
-console.log("Declaring and assigning variable 'ninja'.");
-var ninja = 'Libby';
-setTimeout( function myCallbackFunction(){
-  console.log("LATER: ")
-  console.log(ninja, "LATER"); }, 2000
-);
-console.log("Printing ninja value.");
-console.log(ninja, "NOW");
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="bower_components/jquery/dist/jquery.js" charset="utf-8"></script>
+  <title>Document</title>
+  <script>
+  $(document).ready(
+    function(){
+      $('button').click(function(){
+        // as soon as the AJAX request returns, displayName is invoked and passed data!
+        //https://api.jquery.com/jquery.get/
+        $.get('https://api.github.com/users/githubUserName', BryanLockward);
+      });
+    function displayName(data){
+        if (data.name){
+          $('body').append("<p>"+data.name+"</p>");
+        }
+      }
+    }
+  );
+  </script>
+</head>
+<body>
+<button>Click Me</button>
+</body>
+</html>
