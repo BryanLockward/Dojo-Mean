@@ -40,6 +40,6 @@ class Ninja {
 		}
 	}
 
-	let = super_sensei = new Sensei("Ralph Macchio");
+	let super_sensei = new Sensei("Ralph Macchio");
 	super_sensei.speakWisdom();
 	super_sensei.showStats();
